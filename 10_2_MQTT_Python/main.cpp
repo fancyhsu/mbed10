@@ -56,7 +56,7 @@ int main() {
       MQTTNetwork mqttNetwork(net);
       MQTT::Client<MQTTNetwork, Countdown> client(mqttNetwork);
       //TODO: revise host to your ip
-      const char* host = "10.0.2.15";
+      const char* host = "192.168.43.202";
       printf("Connecting to TCP network...\r\n");
       int rc = mqttNetwork.connect(host, 1883);
       if (rc != 0) {
